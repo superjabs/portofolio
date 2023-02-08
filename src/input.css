@@ -9,7 +9,7 @@
 }
 
 .hamburger-line {
-  @apply w-[30px] h-[2px] my-2 block bg-black rounded-full;
+  @apply my-2 block h-[2px] w-[30px] rounded-full bg-black dark:bg-white;
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -25,12 +25,10 @@
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] bg-white bg-opacity-50 border-b;
-  backdrop-filter: blur(5px);
+  @apply fixed z-[9999] bg-white bg-transparent bg-opacity-70 shadow-sm backdrop-blur-sm dark:bg-neutral-900 dark:bg-opacity-50;
 }
 
-.fake-img {
-  width: 600px;
-  height: 300px;
-  background-color: gray;
+/* SLIDER DARK MODE */
+#toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-4 transition;
 }
